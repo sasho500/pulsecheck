@@ -1,0 +1,9 @@
+targets:
+  - name: github-api
+    url: https://api.github.com
+    checks: [http, tls]
+
+  - name: my-lab-nginx
+    url: https://10.0.1.10
+    checks: [http, tls, port]
+    port: 443
